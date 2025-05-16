@@ -1,20 +1,22 @@
-# Import Flask class from the flask module
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 
-# Create Flask application instance
-# __name__ helps Flask determine the application's root path
 app = Flask(__name__)
 
-# Define route for the root URL ('/')
-# This decorator tells Flask what URL should trigger our function
-@app.route("/")
-def welcome():
-    return "<html><h1>Welcome to the flask course</h1></html>"
-
-@app.route("/index")
+@app.route('/')
 def index():
     return render_template('index.html')
 
+# New POST route
+@app.route('/contact', methods=['POST'])
+def handle_contact():
+    name = request.form.get('name')
+    email = request.form.get('email')
+    message = request.form.get('message')
+    
+    # Process the data here (e.g., send email, save to DB)
+    print(f"New message from {name} ({email}): {message}")
+    
+    return redirect('/')
 
 # Main entry point for the application
 # This ensures the server only runs when script is executed directly
