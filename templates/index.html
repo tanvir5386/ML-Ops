@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanvir's Portfolio</title>
+    <style>
+        /* Basic styling for demonstration */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        #about, #projects, #contact {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #projects .project-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        #projects .project-item:last-child {
+            border-bottom: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tanvirul Islam</h1>
+            <p>BSc in Computer Science & Engineering<br>Daffodil International University</p>
+            <p style="margin-top: 10px; font-style: italic;">AI/ML Engineer | MLOps Specialist | Full-Stack Developer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>
+            🔬 AI Researcher | 🤖 Machine Learning Practitioner | 🚀 MLOps Enthusiast<br>
+            Passionate about designing intelligent systems and implementing machine learning solutions at scale. 
+            Currently exploring Generative AI applications and robust MLOps pipelines for production-grade AI systems.
+        </p>
+        <p>
+            Technical Stack:<br>
+            • Python (TensorFlow, PyTorch, Scikit-learn)<br>
+            • Cloud Platforms (AWS, GCP)<br>
+            • CI/CD Pipelines for ML<br>
+            • Full-Stack Development (Flask, React, Docker)
+        </p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Featured Projects</h2>
+        <div class="project-item">
+            <h3>FlavorLens - AI Recipe Generator</h3>
+            <p>
+                🍳 Cross-platform Flutter application leveraging Gemini AI for recipe generation and nutritional analysis. Features:
+                <ul>
+                    <li>Multi-modal input (text/voice/image)</li>
+                    <li>Diet-specific meal planning (Keto/Halal/High-Protein)</li>
+                    <li>Nutritional visualization with Calorie AI</li>
+                    <li>Tech Stack: Flutter, Firebase, Gemini API, Whisper STT</li>
+                </ul>
+            </p>
+            <p><a href="https://github.com/tanvir5386/flavor_lens_app" target="_blank">GitHub Repository</a></p>
+        </div>
+        <div class="project-item">
+            <h3>Compiler Design Project</h3>
+            <p>
+                ⚙️ Educational compiler implementing lexical analysis and parsing for a custom language. Features:
+                <ul>
+                    <li>Lexical analyzer using Flex</li>
+                    <li>Syntax parser using Bison/Yacc</li>
+                    <li>Comprehensive error handling system</li>
+                    <li>Learning-focused architecture</li>
+                </ul>
+            </p>
+            <p><a href="https://github.com/tanvir5386/compiler_project-" target="_blank">GitHub Repository</a></p>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Let's Connect</h2>
+        <div style="display: flex; gap: 20px; justify-content: center;">
+            <a href="https://github.com/tanvir5386" target="_blank" style="text-decoration: none; color: #333;">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png" alt="GitHub"/>
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/tanvirulislam86/" target="_blank" style="text-decoration: none; color: #333;">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt="LinkedIn"/>
+                LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tanvir Islam. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
